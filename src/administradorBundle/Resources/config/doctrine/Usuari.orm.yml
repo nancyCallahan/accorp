@@ -1,0 +1,31 @@
+administradorBundle\Entity\Usuari:
+    type: entity
+    table: null
+    repositoryClass: administradorBundle\Repository\UsuariRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nif:
+            type: string
+            length: '10'
+            unique: true
+        nom:
+            type: string
+            length: 255
+        cognom:
+            type: string
+            length: 255
+        mail:
+            type: string
+            length: 255
+            unique: true
+        horesTasca:
+            type: integer
+            column: hores_tasca
+        rol:
+            type: integer
+    lifecycleCallbacks: {  }

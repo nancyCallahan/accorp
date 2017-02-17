@@ -1,0 +1,27 @@
+administradorBundle\Entity\Tasca:
+    type: entity
+    table: null
+    repositoryClass: administradorBundle\Repository\TascaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        descripcio:
+            type: string
+            length: 255
+        horesEstimades:
+            type: integer
+            column: hores_estimades
+        horesReals:
+            type: integer
+            column: hores_reals
+        codiProjecte:
+            type: integer
+            column: codi_projecte
+        codiTreballador:
+            type: integer
+            column: codi_treballador
+    lifecycleCallbacks: {  }

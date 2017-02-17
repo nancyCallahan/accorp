@@ -1,0 +1,15 @@
+administradorBundle\Entity\Tipus:
+    type: entity
+    table: null
+    repositoryClass: administradorBundle\Repository\TipusRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        descripcio:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

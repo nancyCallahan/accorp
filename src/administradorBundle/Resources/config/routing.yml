@@ -1,0 +1,3 @@
+administrador_homepage:
+    path:     /
+    defaults: { _controller: administradorBundle:Default:index }

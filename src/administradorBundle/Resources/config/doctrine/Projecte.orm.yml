@@ -1,0 +1,27 @@
+administradorBundle\Entity\Projecte:
+    type: entity
+    table: null
+    repositoryClass: administradorBundle\Repository\ProjecteRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+            unique: true
+        descripCurta:
+            type: string
+            length: 255
+            column: descrip_curta
+        descripLlarga:
+            type: string
+            length: 255
+            column: descrip_llarga
+        entorn:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
